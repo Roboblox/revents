@@ -7496,6 +7496,11 @@
       "resolved": "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz",
       "integrity": "sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4="
     },
+    "lodash.omit": {
+      "version": "4.5.0",
+      "resolved": "https://registry.npmjs.org/lodash.omit/-/lodash.omit-4.5.0.tgz",
+      "integrity": "sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA="
+    },
     "lodash.template": {
       "version": "4.4.0",
       "resolved": "https://registry.npmjs.org/lodash.template/-/lodash.template-4.4.0.tgz",
@@ -10385,6 +10390,15 @@
           "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.10.tgz",
           "integrity": "sha512-UejweD1pDoXu+AD825lWwp4ZGtSwgnpZxb3JDViD7StjQz+Nb/6l093lx4OQ0foGWNRoc19mWy7BzL+UAK2iVg=="
         }
+      }
+    },
+    "redux-revalidate": {
+      "version": "0.1.0",
+      "resolved": "https://registry.npmjs.org/redux-revalidate/-/redux-revalidate-0.1.0.tgz",
+      "integrity": "sha1-vewIAHwYWbNuZHxXuX0cyfeiegw=",
+      "requires": {
+        "lodash.omit": "^4.5.0",
+        "object-assign": "^4.1.0"
       }
     },
     "redux-thunk": {
