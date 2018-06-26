@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import "./index.css";
+import ReduxToastr from "react-redux-toastr";
 import "semantic-ui-css/semantic.min.css";
+import "react-redux-toastr/lib/css/react-redux-toastr.min.css";
+import "./index.css";
 import App from "./app/layout/App";
 import registerServiceWorker from "./registerServiceWorker";
 import { configureStore } from "./app/store/configureStore";
@@ -20,6 +22,11 @@ let render = () => {
     <Provider store={store}>
       <BrowserRouter>
         <ScrollToTop>
+          <ReduxToastr
+            position="bottom-right"
+            transition="fade-in"
+            transtition-out="fade-out"
+          />
           <App />
         </ScrollToTop>
       </BrowserRouter>
