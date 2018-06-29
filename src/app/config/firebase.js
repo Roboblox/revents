@@ -2,15 +2,19 @@ import firebase from "firebase";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD4KCbal_X6C_suWQXBZt4tu8nDpx2n0Uw",
-  authDomain: "revents-444.firebaseapp.com",
-  databaseURL: "https://revents-444.firebaseio.com",
-  projectId: "revents-444",
-  storageBucket: "",
-  messagingSenderId: "1006685690316"
+  apiKey: "AIzaSyB78IxSR1uc3DI4I5KE-FUAZdM-wNK32IU",
+  authDomain: "consummate-mark-208619.firebaseapp.com",
+  databaseURL: "https://consummate-mark-208619.firebaseio.com",
+  projectId: "consummate-mark-208619",
+  storageBucket: "consummate-mark-208619.appspot.com",
+  messagingSenderId: "149874100909"
 };
 
 firebase.initializeApp(firebaseConfig);
-firebase.firestore();
+const firestore = firebase.firestore();
+const settings = {
+  timestampsInSnapshots: true
+};
+firestore.settings(settings);
 
 export default firebase;
